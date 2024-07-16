@@ -1,3 +1,4 @@
 - hosts: vault
   roles:
     - roles/create_user
+    - roles/install_default_tools
