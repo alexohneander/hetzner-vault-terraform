@@ -15,7 +15,8 @@ provider "hcloud" {
 
 resource "hcloud_server" "vault" {
   name        = "vault-1"
-  image       = "debian-11"
+  image       = "debian-12"
+  
   server_type = "cx11"
   public_net {
     ipv4_enabled = true

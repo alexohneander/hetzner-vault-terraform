@@ -3,26 +3,31 @@
     name: htop
     state: present
   become: True
+
 - name: install vim
   package:
     name: vim
     state: present
   become: True
+
 - name: install curl
   package:
     name: curl
     state: present
   become: True
+
 - name: install wget
   package:
     name: wget
     state: present
   become: True
+
 - name: install git
   package:
     name: git
     state: present
   become: True
+  
 - name: install screenfetch
   package:
     name: screenfetch
