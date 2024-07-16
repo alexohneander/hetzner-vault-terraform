@@ -37,7 +37,7 @@ resource "ansible_host" "inventory" {
 
 resource "ansible_playbook" "playbook" {
   playbook   = "playbook.yml"
-  name       = "vault"
+  name       = hcloud_server.vault.ipv4_address
   replayable = true
 
   extra_vars = {
