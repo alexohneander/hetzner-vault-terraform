@@ -2,4 +2,3 @@
   roles:
     - roles/update_host
     - roles/install_default_tools
-    - ansible-community.ansible-vault
