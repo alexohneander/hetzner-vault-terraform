@@ -1,0 +1,14 @@
+- name: Creating vault user group
+  group: 
+    name: "vault"
+  become: true
+  
+- name: Creating vault user
+  user:
+    name: "vault"
+    group: "vault"
+    system: yes
+    shell: "/sbin/nologin"
+    comment: "vault nologin User"
+    createhome: "no"
+    state: present
