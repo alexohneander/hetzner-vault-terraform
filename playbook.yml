@@ -2,4 +2,7 @@
   roles:
     - roles/update_host
     - roles/install_default_tools
-    - roles/create_user
+    - src: https://github.com/ansible-community/ansible-vault.git
+      name: ansible-community.ansible-vault
+      scm: git
+      version: master
