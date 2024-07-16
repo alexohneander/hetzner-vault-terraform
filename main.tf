@@ -37,7 +37,7 @@ resource "ansible_host" "inventory" {
 
 resource "ansible_playbook" "playbook" {
   playbook   = "playbook.yml"
-  name       = ansible_host.inventory.name
+  name       = "vault"
   replayable = true
 
   extra_vars = {
