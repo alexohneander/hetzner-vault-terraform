@@ -29,7 +29,7 @@ resource "ansible_host" "inventory" {
   groups = ["vault"]
   variables = {
     ansible_user                 = var.vm_admin_username
-    # ansible_ssh_private_key_file = ".ssh/nomad_key"
+    ansible_ssh_private_key_file = "~/.ssh/id_rsa"
     ansible_python_interpreter   = "/usr/bin/python3"
   }
   depends_on = [hcloud_server.vault]
